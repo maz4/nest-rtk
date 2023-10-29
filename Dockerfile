@@ -1,0 +1,5 @@
+#Dockerfile
+FROM postgres:15
+ENV POSTGRES_USER nestrtk
+ENV POSTGRES_PASSWORD secret
+ENV POSTGRES_DB nestrtk

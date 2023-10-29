@@ -1,0 +1,17 @@
+#docker-compose.yml
+version: '3.1'
+services:
+  db:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_USER: ${DATABSEE_USER}
+      POSTGRES_PASSWORD: ${DATABSEE_PASSWORD}
+      POSTGRES_DB: nestrtk
+    ports:
+      - 5431:5431
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+
+volumes:
+  postgres_data:
