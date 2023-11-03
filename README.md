@@ -1,5 +1,12 @@
 # NEST-RTK
 
+<!-- ![NestJS](https://docs.nestjs.com/assets/logo-small.svg) -->
+
+<img src="https://docs.nestjs.com/assets/logo-small.svg" alt="NestJS" width="40" height="40"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Swagger-logo.png" alt="Swagger" width="40" height="40"/>
+<img src="https://redux.js.org/img/redux.svg" alt="RTK Query" width="40" height="40"/>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2tHGmbh1QR77hDW52PzJ5ClQCooKU-WRhzl_JHpQU&s" alt="NextJS" width="120" height="35"/>
+
 Test project to check how to use NestJS framework together with RTK-Query on the frontend to eliminate problem of keeping track of types on the back end and front end
 
 Everything starts with DTOs created for the endpoint. The DTOs need to have proper types and decorators.
