@@ -1,4 +1,4 @@
-import { baseSplitApi as api } from "../baseApi";
+import { baseApi as api } from "../baseApi";
 const injectedRtkApi = api.injectEndpoints({
   endpoints: (build) => ({
     userControllerGetUsers: build.query<
