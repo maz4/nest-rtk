@@ -15,6 +15,8 @@ In the controller define used and returned data with @ApiParam, @ApiProperty and
 After configuring the redux in the web directory run `npx @rtk-query/codegen-openapi openapi-config.ts` in terminal to generate hooks for data fetching.
 As you can see from the command this consumes the swagger file and uses all fo the data generated form the DTOs
 
+`users.gen.ts` is an auto generated file with hooks ready to use on the frontend [web/src/store/api/gen/users.gen.ts](web/src/store/api/gen/users.gen.ts)
+
 Note
 Ideal setup would be to have a code generation to create entity files based on the prisma models and use it to extend or pick from theme in the DTOs.
 
@@ -30,3 +32,17 @@ Ideal setup would be to have a code generation to create entity files based on t
   - RTK-Query
     - auto gen code
       - consume swagger-spec.json to generate react hooks to fetch data.
+
+## How to run it
+
+### BACKEND Start NestJS server
+
+Run one terminal in `./server` directory and run `npm run start:dev`
+
+### FRONTEND Start NextJS server
+
+Run second terminal in `./web` directory and run `npm run dev`
+
+## How to run auto gen
+
+will add soon
