@@ -35,6 +35,10 @@ Ideal setup would be to have a code generation to create entity files based on t
 
 ## How to run it
 
+### DOCKER
+
+run in terminal `docker compose up -d`
+
 ### BACKEND Start NestJS server
 
 Run one terminal in `./server` directory and run `npm run start:dev`
@@ -45,4 +49,4 @@ Run second terminal in `./web` directory and run `npm run dev`
 
 ## How to run auto gen
 
-will add soon
+After updating any of the controller properties run `npx @rtk-query/codegen-openapi openapi-config.ts`inside of the `./web` directory
