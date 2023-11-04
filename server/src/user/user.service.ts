@@ -6,7 +6,7 @@ export class UserService {
   constructor(private readonly userRepository: UserRepository) {}
 
   async createUser(data) {
-    return await this.userRepository.create({ data });
+    return await await this.userRepository.create(data);
   }
 
   async findUsers() {
