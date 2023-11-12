@@ -7,12 +7,17 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   // temporary solution for dev - enable CORS from the nextjs frontend
-  app.enableCors({
-    origin: 'http://localhost:3000',
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
-    credentials: true,
-    allowedHeaders: 'Content-Type,Authorization',
-  });
+  // enabled only in dev
+  if (
+    process.env.NODE_ENV === 'development' ||
+    process.env.NODE_ENV === undefined
+  )
+    app.enableCors({
+      origin: 'http://localhost:3000',
+      methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
+      credentials: true,
+      allowedHeaders: 'Content-Type,Authorization',
+    });
 
   const config = new DocumentBuilder()
     .setTitle('NestRTK')

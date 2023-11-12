@@ -1,3 +1,4 @@
 DATABASE_URL="postgresql://johndoe:randompassword@localhost:5431/mydb?schema=public"
 DATABSEE_USER="johndoe"
 DATABSEE_PASSWORD="randompassword"
+NODE_ENV="development"
