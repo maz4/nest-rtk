@@ -1,0 +1,24 @@
+{
+  "name": "nest-rtk",
+  "version": "1.0.0",
+  "description": "<!-- ![NestJS](https://docs.nestjs.com/assets/logo-small.svg) -->",
+  "main": "index.js",
+  "scripts": {
+    "dev:nest": "cd server && npm run start:dev",
+    "dev:next": "cd web && npm run dev",
+    "dev": "concurrently --kill-others \"npm run dev:nest\" \"npm run dev:next\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maz4/nest-rtk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maz4/nest-rtk/issues"
+  },
+  "homepage": "https://github.com/maz4/nest-rtk#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
