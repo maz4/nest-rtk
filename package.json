@@ -4,8 +4,8 @@
   "description": "<!-- ![NestJS](https://docs.nestjs.com/assets/logo-small.svg) -->",
   "main": "index.js",
   "scripts": {
-    "dev:nest": "cd server && npm run start:dev",
-    "dev:next": "cd web && npm run dev",
+    "dev:nest": "cd server && bun run start:dev",
+    "dev:next": "cd web && bun run dev",
     "dev": "concurrently --kill-others \"npm run dev:nest\" \"npm run dev:next\""
   },
   "repository": {
